@@ -1,0 +1,25 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "root": true,
+  "extends": ["eslint:recommended", "plugin:eslint-plugin/recommended", "plugin:node/recommended"],
+  "overrides": [
+    {
+      "files": ["tests/**/*.js"],
+      "env": { "mocha": true }
+    }
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [".js", ".ts"]
+    }
+  }
+}
